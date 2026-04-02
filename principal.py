@@ -1,9 +1,14 @@
-from flask import Flask, render_template, request, redirect
+﻿from flask import Flask, render_template, request, redirect
 from werkzeug.utils import secure_filename
 import os
 from pymongo import MongoClient
 from bson import ObjectId 
 from flask_mail import Mail, Message
+
+def comprueba_fondo():
+    pass
+
+DOCUMENTOS = ["doc", "docx"]
 
 EXTENSIONES = ["png", "jpg", "jpeg"]
 app = Flask(__name__)
